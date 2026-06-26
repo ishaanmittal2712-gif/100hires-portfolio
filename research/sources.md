@@ -25,7 +25,7 @@ commenting on it.
 
 | # | Name | Role | Specialty | LinkedIn | YouTube | Date Collected |
 |---|------|------|-----------|----------|---------|----------------|
-| 1 | Ryan Law | Director of Content Marketing, Ahrefs | AI content systems, thought leadership frameworks | [Link](https://www.linkedin.com/in/thinkingslow/) | [Ahrefs YT](https://www.youtube.com/@AhrefsCom) | June 26, 2026 |
+| 1 | Ryan Law | Director of Content Marketing, Ahrefs | AI content systems, thought leadership frameworks | [Link](https://www.linkedin.com/in/thinkingslow/) | [How to Win in AI Search](https://www.youtube.com/watch?v=iVZrVeESnFQ), [AI Content Workflow](https://www.youtube.com/@AhrefsCom) | June 26, 2026 |
 | 2 | Lily Ray | VP of SEO Strategy & Research, Amsive | Google update analysis, AI Overviews, E-E-A-T | [Link](https://www.linkedin.com/in/lily-ray-44755615/) | [Link](https://www.youtube.com/@lilyray) | June 26, 2026 |
 | 3 | Mike King | Founder & CEO, iPullRank | Technical AI SEO, relevance engineering, GEO | [Link](https://www.linkedin.com/in/michaelkingphilly/) | [Link](https://www.youtube.com/@iPullRank) | June 26, 2026 |
 | 4 | Ross Simmonds | Founder & CEO, Foundation Marketing | Generative Engine Optimization, content distribution | [Link](https://www.linkedin.com/in/rosssimmonds/) | [Link](https://www.youtube.com/@RossSimmonds) | June 26, 2026 |
