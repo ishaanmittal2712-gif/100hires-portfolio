@@ -1,0 +1,1457 @@
+[00:00] So, Ryan, I was thinking today, uh it
+[00:02] didn't take us too long to go from this
+[00:05] AI thing cannot really do great content
+[00:08] to oh my god, this is amazing, right?
+[00:11] And here we are. Uh you have devised an
+[00:15] AI content automation workflow that you
+[00:18] used to actually publish quite a few
+[00:19] articles on Ahrefs blog already, and
+[00:22] these are good articles. These are great
+[00:24] articles.
+[00:25] And yeah, full disclosure, I haven't
+[00:27] seen it yet, so I'll be checking it out
+[00:29] live together with anyone watching it.
+[00:33] And I'm excited, yeah. Do you want to
+[00:35] say a few quick words on what people are
+[00:37] about to see?
+[00:39] >> Yeah, well, exactly that. So, we've
+[00:40] obviously been tinkering with using AI
+[00:43] in our content workflows for years at
+[00:45] this point. And it's always been very
+[00:47] effortful. It could be helpful, but you
+[00:49] have to sink a ton of time and energy
+[00:51] into it. There's still a lot of manual
+[00:52] stuff that has to happen.
+[00:54] I kind of feel like that's not the case
+[00:55] anymore. Uh it's a bit spooky, actually.
+[00:57] I think since Claude code is probably
+[00:59] the big thing that has changed this.
+[01:01] This kind of agentic workflow where
+[01:03] Claude can make some decisions on your
+[01:05] behalf, and you can provide it with some
+[01:07] guardrails to actually make it do things
+[01:09] in a certain way.
+[01:11] Um so, we've basically, yeah, built I
+[01:13] call it the blog pipeline,
+[01:15] uh and it is a kind of content
+[01:17] automation system for new articles and
+[01:19] for content updates.
+[01:21] Uh we've done maybe like 30 article
+[01:23] updates with it so far.
+[01:25] >> Wow.
+[01:26] >> published maybe 10 15 articles, got
+[01:29] maybe something similar in progress at
+[01:31] the moment. Um
+[01:33] yeah, it's been pretty cool.
+[01:34] >> Let's Let's Let's review it. Show it to
+[01:36] me.
+[01:37] >> Yeah, let's do it. Um so, obviously two
+[01:39] things on the screen right now. We have
+[01:41] a terminal, and we have Claude code
+[01:44] running in that terminal. So, that is
+[01:45] just a folder that I've called blog
+[01:47] pipeline, and Claude code is living in
+[01:49] that folder, and it will do stuff in
+[01:51] that folder for me when I ask it to.
+[01:54] Um and we've got VS code over here. This
+[01:56] is just a really good way of showing you
+[01:57] the contents of that folder in a way
+[01:59] that is a bit easier to understand.
+[02:01] Uh these are all the folders on the
+[02:03] left-hand side and they've all got files
+[02:05] inside them.
+[02:07] And I of course, I asked Claude, I said,
+[02:09] "I'm going to present this process on a
+[02:11] podcast with Tim. Give me some notes and
+[02:13] visualizations to help explain this."
+[02:15] So, it added a handy little podcast
+[02:17] folder here uh that has some notes and
+[02:19] visualizations to make this a bit more
+[02:21] interesting.
+[02:24] But, the basic premise is
+[02:25] uh
+[02:27] we have basically set it up such that
+[02:28] there are maybe 23 or so uh skill files
+[02:32] in here. You can see them in this
+[02:34] folder.
+[02:35] Uh and what is a skill?
+[02:37] >> skill files? That's That's a lot.
+[02:39] >> That is a lot.
+[02:41] Um and each of these skill files is
+[02:42] basically a process. It is a process
+[02:45] that at some point during creating
+[02:46] content or updating content as a human,
+[02:49] we generally do something like this or
+[02:51] very similar to this.
+[02:52] Um and this is just a markdown document
+[02:55] with very simple instructions.
+[02:57] >> me already. I I kind of know what skills
+[02:59] are, but you lost me already. Let's
+[03:01] start from the beginning. Where does the
+[03:02] process start? What do we start from? Do
+[03:04] we start from a keyword? Do we start
+[03:06] from an idea? What's the first step with
+[03:07] this?
+[03:08] >> Yes.
+[03:09] Uh so, what you can do is So, this is a
+[03:12] keyword ideas CSV.
+[03:14] Um so, it's obviously a bit hard to see
+[03:16] in this format.
+[03:17] But, basically we've even set up a a
+[03:20] process right now where we can use the
+[03:22] Ahrefs MCP, which is obviously a way for
+[03:25] Claude and other to access Ahrefs data,
+[03:28] and it will run a content gap analysis
+[03:30] for us.
+[03:31] And I've then set up another process
+[03:33] where it will review this list of
+[03:34] keywords and prioritize them.
+[03:36] Uh it looks at the
+[03:37] >> Ryan, again, let me uh use my Eastern
+[03:40] European politeness uh to bring you
+[03:43] right to the point. We're not talking
+[03:44] about keyword research. We're talking
+[03:45] about creating content. So, let's say we
+[03:47] have a keyword or a topic. Uh what do do
+[03:50] do with it? We're not We're not talking
+[03:51] about keyword research. We want to
+[03:52] create content.
+[03:54] >> All right, let me show you then.
+[03:55] Let me
+[03:56] clear this.
+[03:58] >> [snorts]
+[04:01] >> Uh so, I can trigger blog pipeline. I
+[04:04] can put in a keyword like keyword
+[04:06] opportunities.
+[04:08] And if I want, I can add some context to
+[04:11] it and explain, you know, if there are
+[04:12] points I want to add, I can add that.
+[04:15] And off Claude goes.
+[04:17] And probably somewhere from between 8 to
+[04:19] 11 minutes from now, it will have a
+[04:21] draft ready for review.
+[04:23] Um it goes through, yeah, about 12 steps
+[04:26] at this point, as you can see.
+[04:29] >> Oh, wow.
+[04:30] >> It's actually It's actually telling me
+[04:31] we've already It's so clever. It's not
+[04:33] letting me do the same one that we've
+[04:35] already done before.
+[04:37] Um so, there's a research step. There's
+[04:39] a reference step where it looks at
+[04:40] existing articles on the Ahrefs blog.
+[04:43] There's an outlining step where it turns
+[04:45] that into a structured outline.
+[04:47] There's a like product annotation stage
+[04:49] where we look for opportunities to
+[04:51] mention specific Ahrefs products.
+[04:54] There's a drafting phase, a citation
+[04:56] phase for internal linking and finding
+[04:58] supporting sources.
+[05:00] There's a screenshot phase, which
+[05:01] doesn't work very well, but we're
+[05:02] working on that.
+[05:04] Uh a preview phase where you can
+[05:05] actually preview how it would look on
+[05:07] the blog. Uh and then a formatting for
+[05:09] publish phase where it will add in all
+[05:11] the WordPress short codes, all that kind
+[05:13] of stuff we need.
+[05:15] Um
+[05:16] >> Hm, so, basically, when you when you ask
+[05:18] it to create uh a a piece of content
+[05:21] around a given keyword,
+[05:23] you are essentially uh launching a
+[05:26] skill,
+[05:27] which is a combination of steps where
+[05:30] each step is uh a separate skill.
+[05:35] And basically, it has to finish them one
+[05:37] by one, or how does it work?
+[05:40] >> Exactly that, yeah. So, what You can
+[05:42] either trigger the skills individually.
+[05:44] So, if you just want an outline, you can
+[05:45] just ask for an outline by triggering
+[05:47] that skill. But, I've created these kind
+[05:49] of master skills, and they are very
+[05:51] simple. They exist just to tell Claude
+[05:53] to work through the other skills in a
+[05:55] particular order.
+[05:56] Um so, this one's called blog pipeline,
+[05:58] and there's also update pipeline.
+[06:00] Uh and they literally, yeah, just stitch
+[06:02] them together and make Claude
+[06:03] systematically work through these
+[06:05] processes.
+[06:06] >> Okay.
+[06:07] Uh
+[06:07] let me go straight into the
+[06:11] uh
+[06:11] phase of being critical of this. Uh
+[06:15] how is this not a slope? So, what makes
+[06:18] this process produce good content and
+[06:21] not some generic stuff?
+[06:25] >> Yeah. So, that's a very good question. I
+[06:27] think this definitely works best, for
+[06:29] one thing, on topics that we have
+[06:31] already covered in some capacity on the
+[06:34] Ahrefs blog. Um so, one we published
+[06:37] recently, content gap.
+[06:39] We have never written an article about
+[06:41] content gap spec- What was it? Keyword
+[06:43] gap? One of these two. Content decay and
+[06:45] keyword gap. We've written loads about
+[06:46] these concepts generally, but in
+[06:48] slightly different contexts. But, we've
+[06:50] never specifically targeted that
+[06:52] keyword.
+[06:53] But, because this uh is able to go and
+[06:55] look up existing Ahrefs articles and
+[06:57] anchor the content generation process in
+[07:00] what we've already written, uh that goes
+[07:03] a long way to getting rid of a lot of
+[07:04] the problems you'd have.
+[07:06] Um
+[07:07] and there are also some topics, I think,
+[07:09] I'm mainly using this for very
+[07:10] straightforward informational topics,
+[07:12] things that the LLMs know a lot about.
+[07:15] Um there are opportunities for you to
+[07:17] provide some context in it. Uh there's a
+[07:20] particular step in here that looks for
+[07:22] um opportunities to add information
+[07:24] gain. So, it actually reads the
+[07:25] top-ranking articles, summarizes the
+[07:28] contents of them, and makes suggestions
+[07:30] for ideas that are not covered, but
+[07:32] would be useful for the reader to
+[07:33] understand within this.
+[07:36] And I think AI is better at research
+[07:38] than a person is, as well.
+[07:40] Um it can be faster and more systematic
+[07:42] about it. It can go out and look up, uh,
+[07:44] you know, the latest research articles,
+[07:45] the latest stats, all these kinds of
+[07:47] things.
+[07:48] >> Okay, so we definitely cannot go
+[07:50] through, uh, all of your skills, uh, in
+[07:53] the course of this podcast episode
+[07:55] because there is a lot of, uh, a lot of
+[07:57] content in each of the skills. But, I
+[07:59] want you to, uh,
+[08:01] start from the very first step of
+[08:04] creating content and then go to the
+[08:05] second and third and highlight maybe one
+[08:09] or two kind of counterintuitive things.
+[08:11] So, for example, what what might people
+[08:14] get wrong if they would want to kind of
+[08:16] recreate your process? Because, uh, I'm
+[08:18] not sure that we want to just, uh, give
+[08:20] out your process to everyone else if we
+[08:22] want just like open source it and have
+[08:24] everyone else have access to the same
+[08:26] process. And I would imagine that people
+[08:28] would want to,
+[08:29] uh, make it uh, personal to to them and
+[08:33] their voice and their blog and the style
+[08:34] of content that they want. But, yeah,
+[08:36] walk me through each step and tell me if
+[08:39] you uncovered
+[08:42] anything interesting about, uh,
+[08:45] giving instructions to AI on how to kind
+[08:49] of improve the output of this specific
+[08:52] step, if you know what I mean.
+[08:53] >> Yeah, yeah, yeah. So, well, you made a
+[08:55] very good point there as well. I think
+[08:57] the way we are using this is not as
+[08:58] though this is the universal process
+[09:01] that everyone in the team has to follow.
+[09:03] Um, we've actually set it up such that
+[09:05] the team can fork their own versions of
+[09:07] this repo, so they can make their own
+[09:09] version of this folder and they can
+[09:11] modify it how they like. This version
+[09:13] has examples of content that I like and
+[09:16] my writing voice and it's used as part
+[09:18] of the article generation process. It
+[09:20] would be super weird if SQ or Louise,
+[09:23] uh, did the same thing, used my writing
+[09:24] voice for their articles. So, it's very
+[09:27] easy to actually update it and
+[09:28] personalize it. And part of that might
+[09:30] be changing the steps it goes through,
+[09:31] your own personal preferences. Um, this
+[09:34] is kind of very unique to me, I think,
+[09:36] and that's I kind of I think how this
+[09:38] should be used.
+[09:39] Um another good point as well, you said
+[09:42] you were surprised at how many steps
+[09:44] there were in this process. I think that
+[09:45] is actually a very, very good thing.
+[09:48] Um
+[09:49] the more steps you create, the more kind
+[09:52] of introspection you have into the
+[09:53] process, the better you understand it,
+[09:55] uh the more opportunities you have to
+[09:57] actually control and personalize how the
+[09:59] content turns out.
+[10:01] So, one very important thing I learned
+[10:02] very quickly,
+[10:04] obviously I could just set this process
+[10:06] in motion and it would give me an
+[10:08] article in 8 minutes, and either it's
+[10:10] good or it's bad, it's quite hard to
+[10:12] work out how to fix and improve the
+[10:13] process if you do that. So, actually at
+[10:16] every single step of the process, um
+[10:19] you can actually see it it will give me
+[10:21] an output at every stage. So, if
+[10:23] something goes wrong, if I don't like
+[10:25] the article or how it turned out, I can
+[10:26] go back and see uh which part of the
+[10:28] process it didn't work very well.
+[10:31] >> I'm actually surprised that when you
+[10:33] initially tried to launch this process,
+[10:36] you said that you would wait like 8 to
+[10:38] 12 minutes, because I was expecting that
+[10:40] you would actually baby sit it from step
+[10:43] to step, so you would see the output of
+[10:45] the first step, see if you want to
+[10:47] refine it, if if it's according to your
+[10:49] expectations, and then allow it to go to
+[10:51] the second step, but it's all just
+[10:53] batched for you. And the thing is
+[10:55] that that's actually an interesting tip.
+[10:57] This is exactly what I was looking for,
+[10:59] some tips for people of
+[11:01] uh what they need to look for when
+[11:03] they're building this themselves. And
+[11:05] the tip is make sure that the process
+[11:07] saves the output of the step, so if you
+[11:10] don't like the final thing, you can go
+[11:12] step by step and review at which step
+[11:15] kind of it went sideways, so that you
+[11:18] could uh like give it more instructions
+[11:20] or refine the the skill that that refers
+[11:23] to the step uh and make it uh do over
+[11:26] again and see if that would help. But
+[11:28] yeah, I'm surprised that uh you let it
+[11:31] run for like 8 to 12 minutes. Is this
+[11:33] the point that you trust it well enough,
+[11:36] you like your steps? Or yeah, probably
+[11:39] it's that. I don't see any other reason
+[11:41] why would you would just let it cook for
+[11:43] so long and follow all the steps.
+[11:45] >> Yeah, great point. Very importantly,
+[11:47] this is
+[11:48] uh actually months and months of
+[11:50] refinement has gone into this thinking
+[11:52] and the process in here. And actually,
+[11:53] the last podcast episode we talked about
+[11:55] where we had the custom GPTs,
+[11:58] it was like the kind of baby version of
+[12:00] this process. So, a lot of the skills I
+[12:01] have in here are things that we improved
+[12:04] and refined and did handhold and babysit
+[12:07] as part of that process. So, we'd
+[12:08] already written these, already tested
+[12:10] these, already made dozens and dozens of
+[12:12] article outputs with them and kind of
+[12:13] learned to refine them.
+[12:15] So, the thing that Claude does very well
+[12:17] is just stitching those together, um
+[12:19] actually automating that process.
+[12:22] >> Okay, let's go step by step. The first
+[12:23] step I think I see, though it is quite
+[12:25] small, is research, right? Any like one
+[12:28] or two tips to that you saw that would
+[12:31] significantly improve the output of this
+[12:34] step?
+[12:34] >> So, it does a combination of things. Uh
+[12:36] maybe most people would assume, you
+[12:38] know, keyword research is the most
+[12:39] important thing to do, and we have that
+[12:41] in here. It goes and gets a bunch of
+[12:43] Ahrefs data from the MCP, uh related
+[12:46] keywords, parent topic, all this kind of
+[12:48] thing.
+[12:50] And we don't have this yet, but I've
+[12:51] asked for it. What is more important, I
+[12:53] think, is going and looking at the
+[12:54] existing SERP, the content that is
+[12:56] ranking, and analyzing that and seeing
+[12:59] the topics that are kind of consensus
+[13:01] and commonly used there, opportunities
+[13:03] to differentiate from that.
+[13:05] Um
+[13:07] that is what AI content helper is
+[13:08] perfect for doing, but we don't have the
+[13:10] endpoint for that yet. So, this does a
+[13:12] kind of laborious manual version of
+[13:13] that.
+[13:14] >> But what is ex- What is exactly like
+[13:16] what are you asking it to do? Do you ask
+[13:18] it like
+[13:19] open the top-ranking articles for this
+[13:22] keyword and what? And and read them and
+[13:25] summarize them? What do What do you ask
+[13:27] it to do? Like, give me something
+[13:29] interesting about the research step.
+[13:31] >> Yeah, let me try and find it. Here we
+[13:33] go. This is the skill file.
+[13:37] Um so, it starts with keyword ideas.
+[13:42] It gets uh primary keyword metrics and
+[13:44] parent topic. Uh it finds long-tail
+[13:46] keyword variations that share the same
+[13:48] parent topic.
+[13:50] Uh there's some prioritization where it
+[13:51] groups them together and discards ones
+[13:53] that wouldn't fit the writing 10.
+[13:55] >> [snorts]
+[13:56] >> Pulls the questions report through the
+[13:57] MCP as well, so we get commonly asked
+[13:59] questions that people might have related
+[14:01] to this topic. Groups them into question
+[14:03] themes, so we're not just doing like FAQ
+[14:05] spam.
+[14:07] Uh we get the SERP overview. We use that
+[14:09] to go and look at the type of content
+[14:11] that is ranking, the estimated traffic,
+[14:13] all these kinds of things.
+[14:14] Uh analyze the dominant search intent of
+[14:16] the SERP results, so we can see what
+[14:18] type of content performs best that's
+[14:20] kind of going into this process.
+[14:22] Uh and then it looks at the actual
+[14:24] top-ranking pages. So, it uses web
+[14:26] fetch, it retrieves the content, it
+[14:28] extracts the headers, it summarizes
+[14:30] them, it looks for themes and gaps in
+[14:32] them.
+[14:33] And yeah, creates content gaps and
+[14:35] opportunities.
+[14:37] >> [sighs and gasps]
+[14:37] >> Um and you can see an example of the
+[14:39] kind of output. So, it basically creates
+[14:41] a report, like a research report at this
+[14:42] step. I don't have to see this, but this
+[14:45] is what gets fed into Claude at the next
+[14:47] stage of the process.
+[14:48] Uh so, you've got loads of keyword data,
+[14:50] questions to answer, organic results.
+[14:53] Uh
+[14:53] >> You know what? At this point, as I'm
+[14:55] looking at how
+[14:57] detailed and sophisticated these steps
+[15:00] are,
+[15:01] I want to say the word over-engineered.
+[15:05] >> Mhm.
+[15:05] >> I'm actually wondering if you would like
+[15:07] remove half of that, would it just do
+[15:10] as good of a job?
+[15:13] >> Yeah, quite possibly. And that's another
+[15:15] really important part of this process.
+[15:17] Um
+[15:18] I'm always surprised at how good,
+[15:20] increasingly, the most like uh frontier,
+[15:22] most up-to-date models actually are on
+[15:24] their own without any input. Um so a big
+[15:27] part of the testing and iteration we've
+[15:29] been doing is to we've actually been
+[15:31] writing um like test cases. We've been
+[15:34] following this these steps with the
+[15:37] skill file and without it and seeing
+[15:40] whether the without version is actually
+[15:41] good enough. Does the skill file
+[15:42] actually add any benefit to it?
+[15:45] Um
+[15:46] a good number of cases, the models do a
+[15:48] very good job on its own and it just
+[15:50] needs a little nudging in a particular
+[15:52] direction. So I expect as we continue to
+[15:54] improve on these, these skill files and
+[15:56] these outputs will just get simpler and
+[15:58] simpler over time until they're
+[15:59] distilled down to the handful of things
+[16:01] that are very important for getting the
+[16:03] output that we want. Cuz yeah, it's
+[16:05] probably completely over-engineered at
+[16:06] this point, I think.
+[16:08] >> But again, my brain wants some kind of
+[16:11] structure to what we're trying to do. So
+[16:15] the the structure I would So if I were
+[16:18] building this process myself from
+[16:19] scratch and they needed to start from
+[16:21] research of competitors and I know that
+[16:24] my competitors are the pages that are
+[16:26] ranking at the top. Uh what I would tell
+[16:30] uh AI or Claude specifically to do, I
+[16:32] would tell it to download all the
+[16:34] content in the folder
+[16:36] and then yeah, I would I would ask it to
+[16:39] extract from each piece of content kind
+[16:41] of the main themes and the main ideas
+[16:44] and then I would ask it to
+[16:45] cross-reference those main themes and
+[16:47] the main ideas between the articles and
+[16:50] create me one master document with all
+[16:54] of the kind of ideas, stories,
+[16:57] interesting points
+[16:58] uh from all of the content. So my my
+[17:01] output uh I I don't necessarily need
+[17:03] like you had the people also ask
+[17:05] questions and that stuff. I would just
+[17:07] ask it to
+[17:08] uh analyze articles and create kind of a
+[17:11] blended master file with everything
+[17:14] unique that is pulled from all the
+[17:15] articles. Actually, I do a similar
+[17:17] process right now when I when I prepare
+[17:19] for podcast interviews with
+[17:22] marketing leaders. What I do is I do a
+[17:24] pretty similar thing.
+[17:26] I give Claude their previous interviews,
+[17:30] links to their previous interviews on
+[17:31] YouTube. It downloads the transcript and
+[17:34] then it creates me for each of these
+[17:36] transcripts because I don't want to read
+[17:38] the whole thing. I want TLDR, too long
+[17:40] didn't read. So, I ask it extract the
+[17:42] questions because questions are topics
+[17:44] within the interview. And then
+[17:46] differentiate between
+[17:48] main questions and follow-up questions
+[17:49] where the host is digging more into this
+[17:52] topic. So, yeah, you know, like where
+[17:54] the main question, where the follow-up
+[17:56] question and then instead of giving me
+[17:57] the whole answer give me TLDR, just a
+[18:01] few sentences of what the guest replied.
+[18:04] Give me if there was any hot take. Give
+[18:06] me if there was any story. Give give me
+[18:08] if there was any specific number like,
+[18:09] "Oh, we increased our leads by 300% or
+[18:13] something." And I think there was
+[18:15] something else, but I forgot about it.
+[18:17] So, it creates me TLDR for each of the
+[18:20] interviews and as the next step, I ask
+[18:22] it, "Now create me a master TLDR." And
+[18:26] this is what I would read while
+[18:28] preparing for for the podcast interview
+[18:30] because it would give me all the unique
+[18:32] information from like a dozen
+[18:34] interviews. So, it feels that when I
+[18:37] want to create a piece of content, it's
+[18:39] kind of the same. I want to know
+[18:41] what has been said already by
+[18:44] on this topic. So, this is what I would
+[18:46] include research phase. But, yeah,
+[18:49] you're giving it people also ask
+[18:51] questions, parent topics, but it feels
+[18:54] that when you say that you're extracting
+[18:55] kind of topics from a page, it feels the
+[18:58] same what I'm doing when I'm extracting
+[19:00] questions that a host asked my guest and
+[19:03] then I Do Do you also ask it to create a
+[19:05] master document with everything?
+[19:08] >> That is yeah, the basic that research
+[19:10] document is the kind of um
+[19:13] uh this is the research document it
+[19:15] would hand over to the next step of the
+[19:16] process.
+[19:18] >> Okay, uh we discussed research. What is
+[19:20] the next step?
+[19:22] >> So, the next step
+[19:25] uh Ahrefs references.
+[19:28] >> So, how does how does it work?
+[19:30] >> So, this was I actually added this very
+[19:32] recently and this has been very helpful.
+[19:34] Um
+[19:36] Claude can do a good job writing an
+[19:37] article on most topics. It can go and
+[19:39] look up other content. That's all well
+[19:40] and good. Um I really wanted a part of
+[19:42] the process where, you know, as a human
+[19:44] writer, I would go and see what we
+[19:46] already have on a topic because I want
+[19:48] to make sure a new article is consistent
+[19:50] with old things we've written. I want to
+[19:52] interlink between them. Uh I want to
+[19:53] make sure the kind of framing is useful.
+[19:55] I want to be efficient and make sure I'm
+[19:57] not repeating myself. I can just pluck
+[19:59] elements from existing articles. So,
+[20:02] this specifically looks up the target
+[20:03] keyword to see what we have already
+[20:05] published on that topic, what is already
+[20:06] ranking for similar topics, and it
+[20:09] incorporates elements of that into the
+[20:13] uh
+[20:14] like outlining generation process.
+[20:17] >> Okay, it feels like
+[20:19] it feels again I will try to
+[20:23] explain it from my perspective. Uh I
+[20:25] will try to kind of simplify the
+[20:26] process. So, it feels the same as
+[20:29] research as the first step where you
+[20:31] take the pages where you extract kind of
+[20:33] unique information from them and you
+[20:35] want to understand kind of the the
+[20:37] overall topic coverage uh as pulled from
+[20:40] like a dozen different pages. And now
+[20:42] what you're doing, you're referencing
+[20:44] our own content. So, rather than
+[20:46] searching which are the top 10 ranking
+[20:48] pages for the topic, you're going and
+[20:50] searching, okay, what relevant pages
+[20:53] does Ahrefs does our website already
+[20:56] have on this topic? And can we pull
+[20:58] something interesting from them and
+[21:00] again cross-reference with my master
+[21:02] document if we're saying something
+[21:05] unique uh that this master document is
+[21:07] not saying. And what's what's important
+[21:09] is because our content is very
+[21:11] product-laden, we try to fill our
+[21:13] content with use cases of our tools and
+[21:16] data.
+[21:17] Often times, the unique bits that uh AI
+[21:20] can pull from our content on this topic
+[21:23] are those use cases. And you can even
+[21:24] specifically instruct it. So, you can
+[21:26] tell Claude so specifically look for
+[21:28] whenever we're discussing this topic,
+[21:30] how are we uh teaching people to use our
+[21:33] tools? What kind of actionable use cases
+[21:35] we're teaching them? Uh and then it
+[21:37] would create you another document with
+[21:39] like, "Okay, this is the master document
+[21:41] of what all competitors are talking
+[21:42] about this topic, and these are unique
+[21:45] insights that I saw uh published on your
+[21:48] blog, and here are unique I know use
+[21:50] cases uh of your product that I saw in
+[21:52] your articles uh on this topic. So, is
+[21:55] this more or less what you're looking
+[21:57] for?"
+[21:58] >> Yeah, exactly that.
+[22:00] And this step is quite simple as well.
+[22:01] It's basically I wanted to provide a
+[22:04] almost like a list of modules or
+[22:06] sections that could be relevant to this
+[22:09] topic that we have already covered, so
+[22:11] that when it comes to outlining and
+[22:12] drafting, Claude can go and look up
+[22:14] these examples, incorporate those
+[22:16] headers, uh link back to them as an
+[22:18] internal linking step. Just make it kind
+[22:20] of an integrated part of how we create
+[22:22] content.
+[22:24] >> Okay, and then we have next step.
+[22:26] >> Yeah, and now onto the outlining phase.
+[22:28] Um so, let's have a look. See if I can
+[22:30] find the skill for this one.
+[22:33] So, these are This is very similar to
+[22:35] what we had in the uh custom GPTs. This
+[22:38] is kind of the editorial process that
+[22:40] when a writer puts together an outline,
+[22:42] this is how I expect them to do it.
+[22:44] Um
+[22:45] so, it's got some very simple core
+[22:46] concepts. Uh you know, every uh we must
+[22:50] use the bluff principle. So, every
+[22:52] section must open with the most
+[22:53] important idea and then segue to
+[22:56] examples, extra context, that kind of
+[22:58] thing.
+[22:59] >> [snorts]
+[23:00] >> Um we need to make sure we're logically
+[23:02] supporting the thesis. So, the headers
+[23:04] must make sense within the context of
+[23:06] the title you've created. We need to be
+[23:08] exhaustive in how we cover the topic. We
+[23:10] need to be mutually exclusive, so we
+[23:11] don't have loads of overlap between each
+[23:14] of the sections.
+[23:15] Um, and again, these are things that if
+[23:17] you ask Claude to edit an article and
+[23:19] make it MECI, it does a fairly good job
+[23:22] of that. It has a good comprehension of
+[23:23] what that means.
+[23:25] Um, and then you can see an example
+[23:27] outline of an outline here.
+[23:32] So, we've got a hook, key points, uh,
+[23:34] any ideas for transition it wants to
+[23:36] include, or a specific example it wants
+[23:38] to include, it wants to include a table.
+[23:41] Um, these are the bones of the article.
+[23:44] >> You mentioned a very, uh, important
+[23:47] word. The word is example.
+[23:50] Uh, I can give you,
+[23:53] uh, a quick reference of, uh, why I'm
+[23:55] talking about it. So, I have a bunch of,
+[23:58] uh, skills in my Claude code for
+[24:01] creating LinkedIn posts.
+[24:03] Uh,
+[24:04] for example, I have, uh, product-based
+[24:06] LinkedIn posts when I'm announcing a
+[24:08] feature. I have, uh, podcast
+[24:11] announcements when I'm announcing that I
+[24:13] had a new guest on the podcast,
+[24:15] uh,
+[24:15] or just regular posts when I have an
+[24:18] idea and they want to kind of deliver it
+[24:20] in the best possible and punchy way.
+[24:23] The thing is, for, like, each of those
+[24:26] is a separate skill that I have created,
+[24:28] that I have instructed,
+[24:30] uh, Claude code of what I'm looking for.
+[24:31] When I'm announcing a podcast, that's
+[24:33] one format. When I'm announcing a
+[24:35] product update from Ahrefs, that's
+[24:37] another format. When I want just to
+[24:39] improve a random post that can be about
+[24:41] anything, that's a different set of
+[24:43] instructions.
+[24:44] But, the thing is, for each of those
+[24:46] skills, I have a folder where I I have
+[24:49] given Claude code a bunch of examples.
+[24:53] Here [snorts] are the examples of my
+[24:54] previous podcast announcements, so that
+[24:56] not only you have my instructions of how
+[24:59] to write them, how to structure them,
+[25:01] you have examples of how I did that in
+[25:03] my voice already previously. And also
+[25:05] like those examples come also with
+[25:08] engagement metrics. So it's
+[25:09] even sees which post perform better,
+[25:12] which post performed worse.
+[25:14] Same for podcast announcements, same for
+[25:16] product announcements, and same for
+[25:18] random posts. So we'll always have a
+[25:21] folder with examples to reference, and
+[25:23] they almost feel like
+[25:25] when it only has instructions
+[25:29] versus when it has instructions and like
+[25:32] five to 10 examples
+[25:34] I feel it does a better job when it has
+[25:37] kind of the actual examples to fall back
+[25:39] to. So when you're saying that this is
+[25:42] there's a step of an outline, I almost
+[25:44] want to you to have a folder where you
+[25:47] have five examples of outlines of
+[25:49] previous posts.
+[25:52] >> We do have that somewhere. Is it
+[25:53] templates? [clears throat]
+[25:57] Yeah, somewhere we do have that. Maybe
+[25:58] it's in part of the
+[26:00] the skill files.
+[26:02] Cuz they're exactly the same thing. I
+[26:04] Yeah, we
+[26:05] Every time we generate something, we
+[26:06] generally want it to maybe sound like us
+[26:09] or sound a particular way.
+[26:11] And I used to see a lot of people feed
+[26:13] it writing and say, "Can you distill my
+[26:15] writing down to a handful of principles
+[26:17] that you can then follow?"
+[26:19] >> I was I was always very skeptical of
+[26:21] that though. Like how can you reduce
+[26:22] somebody's unique voice down to a
+[26:24] handful of things that then Claude
+[26:25] without that example to back it up can
+[26:27] actually go away and do? I think what
+[26:29] you're you're right, the much better
+[26:30] thing to do is let the model infer
+[26:32] itself from an actual example.
+[26:35] Uh cuz, you know, your writing style I
+[26:36] don't think is always going to map
+[26:39] neatly across to a five bullet point
+[26:41] lists of
+[26:42] your writing style or whatever. But
+[26:44] Claude is a large language model. It can
+[26:46] infer from large samples of text the
+[26:48] patterns that do actually exist in your
+[26:50] content. And that is how it'll end up
+[26:52] sounding like you. So, I totally agree.
+[26:54] Anchoring it with an actual example and
+[26:55] saying, "Make it sound like and feel
+[26:57] like this." is actually pretty good from
+[27:00] um what I've seen.
+[27:00] >> Yeah, and this is this is exactly how
+[27:03] people should create those skills in the
+[27:04] first place, because the way I created
+[27:06] my skills is I gave it a bunch of my
+[27:09] previous podcast announcements. I said,
+[27:12] "Analyze these posts. Tell me what I'm
+[27:15] doing here. Tell me what's my style."
+[27:18] It would tell me like what it kind of
+[27:20] inferred from uh reading my posts, and I
+[27:22] would correct it if I disagree
+[27:24] somewhere. If if it doesn't feel like it
+[27:26] understands what I'm doing, uh sometimes
+[27:29] it would understand what I'm doing
+[27:30] better than myself, which is funny. I'm
+[27:32] like, "Oh, that's that's really what I'm
+[27:34] doing. I just I I was doing it
+[27:36] subconsciously. I didn't understand
+[27:37] that." And then, for example, uh
+[27:40] speaking of podcast announcements, I
+[27:42] would give it some podcast announcements
+[27:44] from Lenny Rachitsky, how he announces
+[27:46] his podcast interviews on LinkedIn. And
+[27:48] I would say, "Okay, analyze what Lenny
+[27:49] is doing here." Uh it would analyze what
+[27:52] Lenny is doing. Again, I would correct
+[27:54] if I disagree with something. And then I
+[27:56] would say, "Now create kind of something
+[27:58] in between, something between my
+[28:00] approach and Lenny's approach, and tell
+[28:02] me what set of instructions you would
+[28:03] come up with." So, basically, I'm not
+[28:05] creating instructions myself. I don't
+[28:07] need to write out instructions. I'm
+[28:09] giving it examples. I'm telling I'm
+[28:11] telling it, "Analyze and tell me what
+[28:14] you see, like what's the kind of
+[28:15] principles behind this piece of
+[28:17] content." And then I would correct it if
+[28:19] I disagree with something. I would
+[28:21] monitor what what instructions it is
+[28:23] creating for itself, and I would uh
+[28:25] correct it. And then, like I said, it's
+[28:27] very important to have those examples
+[28:28] for it to fall back on uh because then I
+[28:32] just I just feel the output is always
+[28:34] better.
+[28:35] Okay, so that's outlining step.
+[28:37] Uh like you said, you you do have some
+[28:39] outline examples. Actually, it's as easy
+[28:41] as asking Claude, "Hey, outlining step.
+[28:44] Uh tell me, do we have examples for it?
+[28:46] How are they stored? are they stored in
+[28:48] a text document, are they stored in a
+[28:49] folder, and it would tell you, and if
+[28:51] you don't, you can just say, "Okay, then
+[28:53] create this folder, add these examples,
+[28:55] and cross-reference it." So, yeah,
+[28:58] uh a lot of people kind of
+[29:01] I'm not sure if I can use the word
+[29:02] over-engineer, but they overthink. They
+[29:05] overthink what is AI, but it's like as
+[29:07] easy as just talking to it, asking it
+[29:09] questions like, "How did you do this?
+[29:11] How did you do that?" And guiding it uh
+[29:13] well, of course, if you have a good idea
+[29:15] of what you want to achieve, but it's
+[29:17] very important to be able to break the
+[29:19] process into kind of
+[29:21] uh smaller steps, into building blocks,
+[29:24] so to say.
+[29:25] >> Yeah.
+[29:26] >> Okay, next uh after outline, what's the
+[29:28] step?
+[29:29] >> So, now what we do is we look at the
+[29:31] outline we've created, and we ask Claude
+[29:33] to find specific opportunities to
+[29:35] mention relevant Ahrefs products.
+[29:38] Um I tried, you know, having this at
+[29:40] integrated into other steps, and it was
+[29:42] a bit hit and miss, and this is
+[29:43] obviously something that really matters
+[29:45] to us, because
+[29:46] this is why we write content. We want to
+[29:48] talk about the product in context where
+[29:50] it makes sense to do that. So, this is a
+[29:51] discrete stage. This will do this every
+[29:53] single time.
+[29:54] Um
+[29:57] Uh you know, it's very simple, cuz
+[29:59] within the skill, I actually have a kind
+[30:01] of master list of Ahrefs products and
+[30:03] features, which I asked Claude to create
+[30:06] for me, and then I updated and tweaked
+[30:08] myself to include like newer ones, add
+[30:10] some features. So, it goes to that, and
+[30:12] it looks at the outline, it says, "Which
+[30:14] of these can I contextually mention in
+[30:17] this outline, and have it make sense,
+[30:19] have it be useful for the reader?" And
+[30:20] it just adds a little signpost for the
+[30:22] next step, uh so that when it comes to
+[30:24] drafting, it knows to actually
+[30:25] incorporate Ahrefs into it.
+[30:28] Like, you know, Keyword Explorer, that
+[30:29] kind of thing.
+[30:32] >> And again, probably this is not
+[30:33] something that people need to write
+[30:35] start to finish themselves. Just drop
+[30:38] links to your landing pages, to your
+[30:40] video overviews, ask it to analyze it
+[30:43] and tell it tell you what the product
+[30:45] is, what is it what is it good for, what
+[30:47] are the top use cases, what are they
+[30:49] like uh use cases for I don't know for
+[30:52] this area, for that area, and then you
+[30:54] just correct it. So, yeah, it's it's
+[30:57] actually those things are easier to
+[30:58] create than than uh people might think.
+[31:02] >> Yeah, exactly. I would go site audit,
+[31:04] rank tracker, content explorer. Uh
+[31:06] Claude did most of the heavy lifting
+[31:08] here. I just reviewed it. Um and I added
+[31:10] in some I need to add in like fire hose
+[31:12] and things like that actually.
+[31:14] Um
+[31:15] But again, Claude can do all this for
+[31:17] you. It's a fantastic diligent worker.
+[31:20] Uh and then after that is the drafting
+[31:22] stage. And I think what most people
+[31:24] would do like a AI content process, this
+[31:26] is probably the only stage they would
+[31:27] create. And certainly when I've talked
+[31:29] to people, this is all they do. They
+[31:30] focus on what are the best prompts for
+[31:33] making an article.
+[31:34] But yeah, from all of our trial and
+[31:36] error, I think having tons of steps for
+[31:38] research and structure before you get to
+[31:40] writing is what ends up giving you the
+[31:41] best outcome.
+[31:43] Um
+[31:45] And this is again similar to the writing
+[31:48] rules we had in our previous GPT. It
+[31:50] just has some This is adapted from our
+[31:52] own internal writers like style guide
+[31:54] for writing.
+[31:55] You know, use the problem agitate
+[31:57] solution uh formula. Here's an example
+[32:00] of it in action as part of the
+[32:01] introduction. That works pretty well.
+[32:03] Some structural stuff, that inverted
+[32:05] pyramid, uh always explain what and why.
+[32:10] Uh
+[32:11] Yeah, all these very simple things that
+[32:12] Claude can do very well.
+[32:14] Mhm.
+[32:15] >> Draft is not a final step, right?
+[32:17] >> It is not the final step.
+[32:18] >> go goes after draft?
+[32:21] >> So,
+[32:23] uh
+[32:24] So, we have a kind of verify claims
+[32:25] stage.
+[32:27] Um internal linking is very important
+[32:29] for us and for SEO, and also making sure
+[32:32] we have
+[32:33] included useful up-to-date sources for
+[32:36] everything that we do. so there is a
+[32:37] particular step in here that
+[32:39] it actually goes through the draft and
+[32:41] it looks for the claims.
+[32:43] Things, you know, claims that the
+[32:45] article is making that we would need to
+[32:46] go out and validate and it makes sure
+[32:48] that it has an up-to-date source for
+[32:51] that or it update it reviews it to see
+[32:54] if it's accurate or not. Um and actually
+[32:56] I've been working on this, you know,
+[32:59] updating this skill because this is a
+[33:00] big part of our content updating
+[33:02] workflow. We want to go back to old
+[33:04] articles, find all the claims, make sure
+[33:06] they have the most up-to-date uh
+[33:07] validation and accurate stats for it.
+[33:10] Uh so that's the next step of that
+[33:11] process there.
+[33:13] >> And there is there is more steps after
+[33:15] this?
+[33:16] >> Yeah, not too many more.
+[33:17] Um so we have
+[33:19] uh a preview stage. So at this point I
+[33:21] wanted to be able to look at the draft
+[33:23] uh and sanity check it and see if I was
+[33:25] happy with it. And it's not always I
+[33:27] don't like looking at markdown files
+[33:29] like this, so it actually generates a
+[33:30] HTML file that is styled to look like
+[33:33] the Ahrefs blog. And I can then open
+[33:35] that up in my browser just to like see
+[33:38] what it would look like and feel like on
+[33:39] the blog, so I can quickly review it
+[33:41] from that point of view.
+[33:43] And the thing that still takes a ton of
+[33:46] my time that I am trying to work on is
+[33:48] uh screenshots.
+[33:50] So much of our content is product-led,
+[33:52] it involves using the Ahrefs product.
+[33:54] Screenshots are so important for that.
+[33:57] At the moment what this does is it will
+[34:00] uh suggest a report
+[34:03] uh that we can actually go and visit and
+[34:05] take a screenshot of.
+[34:06] And we actually have another skill that
+[34:08] other people on the comp in the company
+[34:10] have built which allows the claw to
+[34:12] structure correct URLs for our reports.
+[34:15] So it can actually generate a genuine
+[34:17] report URL for you to visit in Ahrefs
+[34:20] and then I can take a screenshot of
+[34:21] that. So that's quite useful. I'm trying
+[34:23] to automate that with some headless
+[34:25] browser stuff and some screenshotting
+[34:27] and that kind of thing. Um but at the
+[34:29] moment I spend as much time doing the
+[34:31] screenshots as I do actually editing,
+[34:33] reviewing, generating. So, that's a big
+[34:35] part of it.
+[34:37] >> Okay, uh since my my job on this podcast
+[34:41] and in our calls is to essentially
+[34:43] criticize everything you do.
+[34:45] >> [laughter]
+[34:46] >> What what what a fun job. People would
+[34:48] would think I'm a terrible person, but
+[34:52] it is what it is. To be honest, one one
+[34:54] step I I
+[34:56] expected to see in this process
+[35:00] is when you would
+[35:02] kind of dictate to this system some of
+[35:06] your thoughts of where to take this
+[35:08] article in free form. And I would
+[35:11] explain why Ah, you have it or
+[35:13] something? You you you you're pointing
+[35:14] something out.
+[35:15] >> indeed. Yeah, I kind of glossed over it.
+[35:17] Um
+[35:18] I totally agree. Sometimes you just want
+[35:19] to provide a few sentences of thought or
+[35:21] direction. You want to mention a
+[35:23] specific product and you don't trust it
+[35:25] will do it itself. So, one of the things
+[35:27] I added recently was this context
+[35:28] trigger.
+[35:29] Um so, this right at the get-go when you
+[35:32] trigger the workflow, you can provide it
+[35:33] with as many sentences of context as you
+[35:36] would like, and that is then used to
+[35:38] shape and inform the rest of the
+[35:39] process.
+[35:40] Um so, often I'll say cover this topic
+[35:42] or this topic or review this existing
+[35:45] article and bring elements of that into
+[35:47] it or mention this new product and that
+[35:49] kind of thing. And it's just a little
+[35:51] directional nudge and then again, that
+[35:52] seems to be very useful for getting a
+[35:54] good outcome from it.
+[35:56] >> Uh I think it's like a critical step in
+[35:59] my opinion. Again, we are still in the
+[36:02] very early days of all that. We're still
+[36:04] experimenting and
+[36:06] like I have so many thoughts
+[36:09] in regards to all this. So, first of
+[36:10] all, I think it's important to point out
+[36:12] that what you just showed is a work in
+[36:15] progress. Because any any kind of skill,
+[36:18] any kind of workflow that you build for
+[36:20] yourself in Claude Code or any other AI,
+[36:23] it shouldn't be set in stone every time
+[36:26] you run it and every time you analyze
+[36:29] the output, whether total output or
+[36:31] whether output of the steps,
+[36:33] and you don't like something, you need
+[36:35] to go and refine, and you keep refining
+[36:37] and refining, and you're basically
+[36:38] teaching your AI workflow, AI agent, AI
+[36:42] skills skill to do a better job, and
+[36:44] with every run it would get better and
+[36:46] better. Uh so, this is the first point.
+[36:48] The second point, I feel this uh this
+[36:50] step of giving it context
+[36:53] is super important because it is what
+[36:57] will essentially make your content
+[37:00] unique. Because again, uh the reason why
+[37:03] I was also surprised that you would let
+[37:05] it run for 8 minutes and just generate
+[37:07] something for you, is because I would
+[37:08] expect that uh you would get a TLDR file
+[37:12] from the top competitors, you would go
+[37:15] through it, and you would just like in
+[37:16] free form, uh I'm I'm using WhisperFlow,
+[37:19] this thing to dictate into into anywhere
+[37:22] basically in text all the time, and I
+[37:24] would just click a button and I would
+[37:25] say, "Oh, like, so I disagree with this
+[37:28] part. I think this part is good. Don't
+[37:30] even mention this part is not important.
+[37:32] Here is where I think you can and you
+[37:34] can give it a lot of instructions." It's
+[37:36] almost as when we had those content
+[37:39] mastermind calls, where we would discuss
+[37:41] ideas and we would brain storm where to
+[37:43] take every idea.
+[37:45] In the same way that we were giving each
+[37:47] other feedback and uh kind of figuring
+[37:50] out what angle is best to take uh with
+[37:53] uh any given content idea, in the same
+[37:56] way you can provide uh feedback to or
+[37:59] context to AI, and I feel it would it it
+[38:03] typically would do a great job at doing
+[38:06] this.
+[38:08] >> And that's very another very good point.
+[38:10] Maybe I'll talk briefly about how I
+[38:11] think conceptually this process should
+[38:13] be used for content marketing generally.
+[38:16] Like, this is not the Ahrefs content
+[38:18] process going forward. It is not as
+[38:20] though everything we create has to come
+[38:21] through this or will come through this?
+[38:23] Um we spend a lot of time writing stuff
+[38:26] that is AI still not very good at
+[38:28] helping with things that require tons of
+[38:30] thought and experience and unique
+[38:32] perspectives and ideas that maybe other
+[38:34] people haven't even shared before.
+[38:36] I think this is really useful because
+[38:39] you know, we've written literally
+[38:40] thousands of articles over the years and
+[38:43] what I see being really important for us
+[38:45] going forward is having this
+[38:46] well-maintained library of evergreen
+[38:48] search content. I want to make sure we
+[38:50] cover all the core topics that relate to
+[38:52] our product and how to use it, keep them
+[38:54] updated. And a lot of times that is very
+[38:56] simple, quite repetitive stuff. Like how
+[38:58] many ways are there to do keyword
+[39:00] research? Quite a few as it turns out.
+[39:03] So I think this is really good for
+[39:05] topics, you know, we have tons of
+[39:07] information documenting keyword research
+[39:09] and all these kinds of topics that can
+[39:10] be used to inform this process. This is
+[39:13] almost like, you know, doing our
+[39:14] housekeeping for us in some sense. Um
+[39:17] it's not something that requires a ton
+[39:19] of direct involvement guidance because
+[39:21] we've already done that. We've written
+[39:22] dozens of articles on these topics that
+[39:24] it is using
+[39:25] used to shape these articles now.
+[39:28] Um and you know, I've generated tons of
+[39:30] articles from this that were I could
+[39:31] have published and would have been fine,
+[39:33] but I didn't know enough about them. I
+[39:35] didn't think they were interesting
+[39:36] enough and I've chosen not to do that
+[39:38] because I still deeply care about
+[39:40] everything we publish and I'm I want to
+[39:42] make sure we put out the best thing we
+[39:43] can.
+[39:45] >> So yeah, I feel this process and the
+[39:47] reason why kind of you let it run on
+[39:50] itself with little output, it feels that
+[39:53] it's best used to take some kind of what
+[39:56] we call a general knowledge topic and
+[39:59] adapt it to us because one of the steps
+[40:02] it pulls from our existing content and
+[40:04] it finds what kind of unique stuff we
+[40:06] said, then it finds the the way to
+[40:09] include Ahrefs in our use cases in this
+[40:11] post. So basically, for example, there's
+[40:13] plenty of information about link
+[40:15] building
+[40:16] but it doesn't necessarily share what we
+[40:20] have shared about link building, and it
+[40:22] doesn't necessarily makes good use of
+[40:24] Ahrefs tools when it comes to link
+[40:26] building. So, with this automated
+[40:27] process, this is where you don't need to
+[40:29] write something from scratch. You can
+[40:30] analyze existing content, and AI can
+[40:32] find a lot of information from our
+[40:35] existing articles and from our tools to
+[40:37] include in the post, and yeah, you have
+[40:40] the post ready.
+[40:42] Am I right?
+[40:43] >> Yeah, exactly that.
+[40:45] Yeah, I like to think, is this a boring
+[40:47] topic that I don't want to write
+[40:49] because we've covered it a thousand
+[40:50] times? If so, maybe it's a good
+[40:52] candidate for the AI process,
+[40:54] which is not everything we publish.
+[40:58] >> In that regard,
+[40:59] oh, you have something something else to
+[41:01] say.
+[41:02] >> Yeah, so very briefly, I just it kind of
+[41:03] ties onto this. And also, we built a
+[41:05] content updating pipeline. This is a bit
+[41:07] newer. I'm still tinkering with this.
+[41:09] But in a similar way, yeah, we have
+[41:10] yeah, thousand published articles, for
+[41:12] example, and it's very hard for human
+[41:15] people to keep on top of that, keep them
+[41:17] updated. So, we're working on a similar
+[41:19] process here that is designed to
+[41:21] basically periodically give you updated
+[41:24] content to review and edit and approve
+[41:26] and potentially publish.
+[41:28] Um, and very similar thing, there are
+[41:30] basically three things this does.
+[41:32] It looks for claims that might be
+[41:34] outdated. So, there's an old stat or
+[41:37] something that doesn't make sense,
+[41:39] Claude will review it and try and find a
+[41:40] new version of that and allow you to
+[41:42] accept it if you want to.
+[41:44] Um, you can find opportunities to add
+[41:46] new Ahrefs product features. So,
+[41:48] obviously some of our articles were
+[41:49] published like eight years ago, they
+[41:51] don't mention our latest products like
+[41:53] firehose or, you know, AI content
+[41:55] helper. This can make recommendations
+[41:57] for you.
+[41:58] And lastly, updating topic gaps. So,
+[42:01] this is where it looks at the SERP and
+[42:03] it says, is there anything that has
+[42:05] other articles talk about that we don't?
+[42:07] Perhaps we should draft a section for
+[42:09] you to review and edit and didn't
+[42:11] And it just makes, you know, a very
+[42:12] boring, um, unstructured process a bit
+[42:15] more organized and a bit more, um, fun
+[42:17] for people to engage with, I think.
+[42:20] >> I I really really like where all of this
+[42:22] is going because I think this is
+[42:24] actually the future of how content is
+[42:26] going to be created. And, uh, I wanted
+[42:29] to wrap wrap this up from a different
+[42:31] perspective because you essentially
+[42:33] shared a workflow of how, uh, to create
+[42:36] content on what you call like a boring
+[42:38] topic, something that has been covered
+[42:40] over and over and we just have like some
+[42:43] unique spin or we want to cover this
+[42:45] topic and include our products and
+[42:46] services. I wanted to to share a quick
+[42:49] story, uh, from the other side when you
+[42:51] want to create something completely
+[42:53] unique. Uh, and that is, uh, so I'm in
+[42:56] the process of writing a book as I
+[42:57] mentioned many times on this podcast
+[42:59] already. And, uh, just 8 months ago I
+[43:03] was complaining to, uh, a bunch of our
+[43:05] team members that it is very hard for me
+[43:08] to context switch because when I stop
+[43:10] working on the book and I do some like
+[43:13] projects, uh, inside Ahrefs and then I
+[43:16] need to return to the book like a few
+[43:17] weeks later, I barely remember what I
+[43:19] was writing about, I barely remember my
+[43:21] train of thought and it's almost like I
+[43:23] need to upload all the information from
+[43:25] scratch. And, uh,
+[43:27] I think it was father who said, uh, "Why
+[43:29] don't you just upload like all your
+[43:31] chapters to AI and kind of ask it to
+[43:33] guide you like, uh, AI would ask like a
+[43:35] journalist or a ghostwriter who'd be
+[43:37] interviewing you, asking you questions
+[43:39] and would be kind of writing the book
+[43:41] for you." It was 8 months ago, about 8
+[43:43] months ago. And I said,
+[43:45] "I cannot see how I would be able to do
+[43:48] that." So, back in the day we didn't
+[43:49] have Claude Claude, back in the day like
+[43:51] ChatGPT just released their custom GPTs
+[43:54] or something.
+[43:55] I couldn't see how I would upload like
+[43:58] my entire book and be able to work with
+[44:00] it. Fast forward 8 months and the last
+[44:03] chapter of my book, I just finished the
+[44:05] the draft. The last chapter I wrote it
+[44:07] with AI by dictating my ideas into
+[44:10] Claude code. And my process was I told
+[44:12] it, "Okay, the name of the chapter is
+[44:14] this. What is going to happen is you're
+[44:17] going to create a folder with my random
+[44:19] dictations because I have a list of
+[44:21] notes what I want to say within this
+[44:23] chapter. And those notes exist in the
+[44:25] form of
+[44:27] three words or one sentence. Basically,
+[44:29] talk about this or expand on this idea."
+[44:32] And I would hit a button and I would
+[44:34] just ramble. So, there's this idea and
+[44:37] they wanted to say blah blah blah. And
+[44:39] we like did this thing at Ahrefs and we
+[44:42] have this interesting story blah blah
+[44:43] blah.
+[44:44] Dictation over. Next idea. And I was
+[44:47] just
+[44:48] rambling on each of my ideas. I had a
+[44:50] few dozen of them. Okay, it saved it to
+[44:52] the folder. And I said, "Okay, I'm also
+[44:55] like when talking when talking about
+[44:56] those ideas, I was referencing a few
+[44:58] things. Some of the things that I
+[44:59] discussed with some other marketing
+[45:01] leaders on the podcast, some of the
+[45:02] things that we actually covered on
+[45:04] Ahrefs blog." For example, we have an
+[45:05] article about taste. And I just said,
+[45:07] "Oh, like I'm talking about taste in in
+[45:09] my chapter and you have my voice
+[45:11] dictation with my ramblings about it,
+[45:13] but we also wrote a nice post. Please
+[45:16] include it as sources when talking about
+[45:18] taste." So, I gave AI I gave it all my
+[45:21] dictations and I gave it all the
+[45:23] resources that I remembered like
+[45:25] different YouTube videos, interviews,
+[45:27] different articles that I want to
+[45:29] reference, etc. Even some LinkedIn posts
+[45:31] that I saw from people who are sharing
+[45:33] these ideas.
+[45:34] And then I said, "Okay, now the general
+[45:37] idea of this chapter
+[45:40] is this. I'm trying to make a point that
+[45:42] blah blah blah blah blah.
+[45:44] Now you know like all my dictations, now
+[45:47] you know all my resources, all the
+[45:48] stories I want to tell.
+[45:50] Tell me how would you connect the dots?
+[45:53] How would you structure it? So,
+[45:54] essentially create me an outline." And
+[45:57] it would write me, "Oh, so I suggest
+[45:59] that you lead with this story, then it
+[46:01] transitions well this, and then this
+[46:03] argument, and then these things, blah
+[46:04] blah blah.
+[46:06] At which point I would say, like I would
+[46:08] give it some feedback where change it or
+[46:10] not.
+[46:11] Or I would say, sounds good to me, write
+[46:14] it. And it would write a chapter for me.
+[46:16] And then I also like upload it to Cloud
+[46:19] Code. I I downloaded from Google
+[46:21] Documents all my previous chapters, and
+[46:22] I said, okay, for each chapter create
+[46:25] kind of a synopsis file. What this
+[46:27] chapter is about, what are the key
+[46:29] arguments that I'm making, and what is
+[46:31] the TLDR outline of a chapter, what are
+[46:33] the main stories and key ideas that I'm
+[46:35] sharing. So for each chapter it created
+[46:37] this file kind of with a recap of the
+[46:39] chapter. And then I said, now refer to
+[46:41] all the files of all the chapters, and
+[46:44] create me a synopsis of the book. I want
+[46:46] to know like what the book is about, how
+[46:47] it is structured, and what is illogical.
+[46:50] And it is so good. It's like it's
+[46:52] literally like you're you're offloading
+[46:55] some of your brain work to someone else.
+[46:57] Like you have an external brain that
+[46:59] processes information for you. So this
+[47:02] is why kind of when when we started
+[47:05] talking and when you shared that you
+[47:06] created a system for
+[47:08] creating blog posts fast, and you said
+[47:11] that your productivity increased, that
+[47:13] you published like three articles in a
+[47:15] few days or something like that.
+[47:17] I am actually expecting that all of the
+[47:20] content that we're going to create, it
+[47:22] would go through AI, that we will no
+[47:24] longer manually write stuff. We will
+[47:28] just hit a button. We would ramble to AI
+[47:30] what we want to say. We would point it
+[47:32] at like whatever resources we want to
+[47:35] use to make a point, and it would help
+[47:37] us write even a better article because
+[47:40] its ability to connect the dots and
+[47:42] understand what you're saying
+[47:44] is actually quite crazy. I'm very
+[47:47] surprised how well it was able to
+[47:49] distill my ramblings into coherent
+[47:53] ideas, and connect the dots between
+[47:55] them, and organize it in a way where I'm
+[47:57] like woah, this actually looks quite
+[48:00] good. So, yeah,
+[48:02] the process that that we just covered in
+[48:05] in this podcast is mostly for kind of
+[48:08] semi-automated content. You still want
+[48:10] to like overlook it and like like you
+[48:12] said, you have a step to give it context
+[48:14] of where you want to take it and what's
+[48:15] the unique angle and stuff like this,
+[48:18] but it's still like you're you're
+[48:19] floating the majority of the work. While
+[48:23] I think going forward creating content
+[48:26] yeah, AI would act like a journalist, an
+[48:29] editor, a ghostwriter, and you would act
+[48:32] as a source of ideas and opinions. And
+[48:35] people who don't have a good writing
+[48:37] skill, but have strong opinions would be
+[48:39] able to publish their content fast. So,
+[48:41] what are your thoughts on this?
+[48:43] >> Yeah, I totally agree with that. Um, I
+[48:46] always find some people think that human
+[48:48] creativity is too unique and magical and
+[48:51] special that like AI could never help
+[48:53] with it and never be a useful aid in
+[48:54] that process.
+[48:55] But actually, there's a lot of mental
+[48:57] drudgery we do when we're writing a book
+[48:59] or an essay or anything like that. I
+[49:02] think the ideas, the motivations, the
+[49:03] experiences, the things we care about,
+[49:06] that is still uniquely you in your book.
+[49:08] It's still your book and your ideas, but
+[49:11] all yeah, the sitting down for hours and
+[49:13] shuffling these ideas about and working
+[49:14] out what are the common themes, that is
+[49:17] something that AI is fantastic at doing.
+[49:19] Um, yeah, if it can make these writing
+[49:22] and creative processes more fun for us,
+[49:24] then like well, that shouldn't be scary.
+[49:26] I think that should be fun. We'll be
+[49:27] more prolific, we'll share more stuff,
+[49:29] there'll be more of our unique thoughts
+[49:30] and ideas out in the world.
+[49:32] Um,
+[49:33] so if yeah, for all the kind of like sad
+[49:35] drudgery and you know, are we automating
+[49:37] careers and jobs away, actually we could
+[49:38] create more cool stuff than has ever
+[49:40] existed before in human history. That's
+[49:42] totally possible now.
+[49:44] >> [snorts]
+[49:44] >> I like I like the word drudgery. I think
+[49:47] what what AI does, it it literally
+[49:49] eliminates drudgery. Because like I
+[49:51] said, for me it was a pain to go back
+[49:55] and to because I would need to read my
+[49:57] entire chapter again to remember what I
+[50:00] was saying there. And now I can say,
+[50:01] "Remind me what was the synopsis of the
+[50:03] chapter, where we left off, which ideas
+[50:06] need work?" It would tell me all that
+[50:08] and I'm like immediately I can continue
+[50:10] working and I can pick up where we left
+[50:12] off. So,
+[50:13] yeah, let's let's not make it longer
+[50:15] than than we need.
+[50:17] Thanks a lot for sharing your process.
+[50:20] Thanks a lot for as always letting me to
+[50:22] jump in with my thoughts and ideas.
+[50:25] I generally think we're on the right
+[50:27] track with with
+[50:29] these kinds of things and this is the
+[50:31] future, definitely. This is the future
+[50:33] of content marketing and content
+[50:34] creation.
+[50:35] Thank you, Ryan.
+[50:37] >> Thanks, Tim.
