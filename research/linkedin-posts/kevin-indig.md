@@ -1,81 +1,72 @@
-# Nathan Gotch — LinkedIn Posts & Published Insights
-**Role:** Founder, Gotch SEO Academy & Rankability
+# Kevin Indig — LinkedIn Posts & Published Insights
+**Role:** Independent Organic Growth Advisor; Founder, Growth Memo
 **LinkedIn:** https://www.linkedin.com/in/kevinindig/
-**Website:** https://www.gotchseo.com/
+**Website:** https://www.kevin-indig.com/
+**Newsletter:** https://www.growth-memo.com/
 
 ---
 
-## Post 1 — AEO as the New SEO (2025)
-**Source:** https://www.linkedin.com/in/nathangotch/
+## Post 1 — AI Mode and the Future of Traffic (2025)
+**Source:** https://www.linkedin.com/posts/kevinindig_all-of-my-clients-have-asked-me-about-my-activity-7331421919147114496-qH3V
 
-Nathan's core argument in 2025-26: Traditional SEO alone will 
-not help you win. AEO (Answer Engine Optimization) and GEO 
-(Generative Engine Optimization) are now essential pillars 
-of any search visibility strategy.
+Kevin's core argument: AI Mode and AI Overviews make more than 50% 
+of traditional clicks redundant. His research via Growth Memo shows 
+that users who encounter an AI summary click through to external sites 
+only 8% of the time — versus 15% for users who do not see an AI 
+summary. That is a near-halving of organic traffic potential.
 
-He breaks down the three pillars of modern search visibility:
+His strategic pivot for clients: Stop measuring SEO success in clicks. 
+Shift KPIs to brand visibility and revenue impact. The demand has not 
+disappeared — it is being captured inside Google's own interface.
 
-- SEO (Search Engine Optimization): The foundation for ranking 
-  in traditional search results. Still essential, still the 
-  base layer. Cannot be skipped.
+Key thesis: "2024 was peak traffic year." Organic visits will continue 
+declining as AI search surfaces answers without a click. The brands that 
+survive this shift are the ones that have built enough brand authority to 
+get cited inside the AI response — not just ranked below it.
 
-- AEO (Answer Engine Optimization): Structuring content for 
-  featured snippets, voice assistants, and zero-click answers. 
-  Focuses on how questions are answered directly in search 
-  results without a click.
+Background that makes him credible: Led SEO and organic growth at 
+Shopify, G2, and Atlassian. Now advises Ramp, Reddit, Dropbox, Hims, 
+Nextdoor, and Snapchat. Growth Memo reaches 21,000+ subscribers weekly.
 
-- GEO (Generative Engine Optimization): Optimizing so 
-  AI-powered tools cite your content in conversational search. 
-  ChatGPT, Gemini, Perplexity — the goal is to be the source 
-  these systems pull from.
-
-Key quote from his LinkedIn: "AI = terrible at SEO. AI led by 
-experienced SEO pro = domination. If you don't believe me, ask 
-any AI to do your SEO campaign."
-
-**Annotation:** Nathan's framing of SEO + AEO + GEO as three 
-distinct but connected layers is one of the clearest mental 
-models available for practitioners trying to navigate the 
-current search landscape. His YouTube channel makes these 
-concepts accessible to practitioners at all levels — which 
-is why he has built one of the largest SEO education audiences 
-online. For a growth marketer at a B2B SaaS, this three-pillar 
-framework is a practical starting point for building a modern 
-content strategy.
+**Annotation:** Kevin is the clearest voice on the conversion economics 
+of AI search — not just the visibility side. Where others debate whether 
+AI citations matter, he has already shifted his clients' KPIs away from 
+clicks. For a B2B SaaS like 100Hires, this is the most actionable 
+reframe available: measuring brand mentions inside AI responses, not 
+just organic click volume.
 
 ---
 
-## Post 2 — AI Efficiency and Agency Pricing (2025)
-**Source:** https://www.linkedin.com/in/nathangotch/
+## Post 2 — 2026 Predictions: Agentic SEO and the End of AI Dashboards
+**Source:** https://www.linkedin.com/posts/kevinindig_in-my-final-growth-memo-of-2025-i-reflected-activity-7406417643831885824-yDrK
+**Source 2:** https://www.growth-memo.com/
 
-Nathan raised an important operational question for the SEO 
-industry in 2025:
+In his end-of-2025 Growth Memo, Kevin scored his predictions for 
+the year and laid out what comes next.
 
-"AI has changed how fast and efficiently agencies can execute. 
-That raises a fair question for CMOs: Have those efficiency 
-gains made their way into your pricing? Many programs still 
-reflect 2024 (or earlier) cost structures, even though 
-production across SEO, link building, and social has become 
-significantly more streamlined."
+Core 2026 argument: The next frontier is not AI search optimization 
+— it is agentic SEO. AI agents that research, compare, and transact 
+on behalf of users represent a longer-term structural shift than 
+AI Overviews. Big brands will spend 2026 building the technical 
+infrastructure required to comply with what agentic search needs.
 
-His own response: In 2025, he reworked Gotch SEO's programs 
-to reflect actual effort required in an AI-assisted workflow 
-— not outdated manual processes.
+What agentic SEO requires:
+- Structured, machine-readable content that AI agents can parse 
+  without rendering JavaScript
+- Clear entity signals so agents can confidently identify and 
+  recommend a brand
+- Third-party corroboration — agents trust sources they can 
+  cross-reference, not self-reported claims
+- New metrics: agentic completion rate (did the agent complete 
+  the task using your product or content?)
 
-Additional insight on content strategy:
-"Before investing a single dollar into SEO, you should always 
-ask: Should you? If you want to rank for a big topic and 
-you've got one page while competitors have hundreds, that 
-gap matters."
+Broader thesis on the web: Kevin predicts a web increasingly divided 
+between bot traffic and verified human users — which changes how 
+content performance is measured and how trust signals are established.
 
-Built: Rankability — SEO and AEO software for agencies who 
-want predictable, measurable results from their content 
-and search programs.
-
-**Annotation:** Nathan brings an operator's perspective that 
-most thought leaders lack. He runs an agency, builds software, 
-and teaches — which means his insights are grounded in what 
-actually works at scale, not just what sounds good in a 
-conference talk. His point about AI efficiency changing 
-the economics of content production is directly relevant 
-to any growth team evaluating their content investment.
+**Annotation:** Kevin operates 12-18 months ahead of the mainstream 
+SEO conversation. His agentic SEO framing is the next logical step 
+after GEO — and for a B2B SaaS ATS like 100Hires, where buyers 
+increasingly rely on AI agents to shortlist tools, being structurally 
+readable and corroborated is a direct product and content strategy 
+concern, not just an SEO concern.
