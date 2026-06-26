@@ -1,6 +1,6 @@
 # Nathan Gotch — "AI SEO and GEO: The Ultimate Checklist for 2025"
 **Channel:** Gotch SEO (YouTube)
-**URL:** https://www.youtube.com/@GotchSEO
+**URL:** https://www.youtube.com/@nathangotch
 **Source:** https://www.classcentral.com/course/youtube-ai-seo-geo-the-ultimate-checklist-for-2025-470957
 **Duration:** ~40 minutes
 

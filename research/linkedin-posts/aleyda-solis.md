@@ -1,6 +1,6 @@
 # Aleyda Solis — LinkedIn Posts & Published Insights
 **Role:** Founder, Orainti (International SEO & GEO Consultancy)
-**LinkedIn:** https://www.linkedin.com/in/aleydasolis/
+**LinkedIn:** https://www.linkedin.com/in/aleyda/
 **Resource she built:** https://learningaisearch.com/
 
 ---

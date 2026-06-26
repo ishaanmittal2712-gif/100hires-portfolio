@@ -1,6 +1,6 @@
 # Koray Tugberk Gubur — LinkedIn Posts & Published Insights
 **Role:** Founder, Holistic SEO & Digital
-**LinkedIn:** https://www.linkedin.com/in/koraytugberkgubur/
+**LinkedIn:** https://www.linkedin.com/in/koray-tugberk-gubur/?locale=en
 **Website:** https://www.holisticseo.digital/
 
 ---

@@ -1,6 +1,6 @@
 # Nathan Gotch — LinkedIn Posts & Published Insights
 **Role:** Founder, Gotch SEO Academy & Rankability
-**LinkedIn:** https://www.linkedin.com/in/nathangotch/
+**LinkedIn:** https://www.linkedin.com/in/kevinindig/
 **Website:** https://www.gotchseo.com/
 
 ---

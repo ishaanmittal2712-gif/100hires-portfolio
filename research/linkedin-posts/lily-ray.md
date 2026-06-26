@@ -1,6 +1,6 @@
 # Lily Ray — LinkedIn Posts & Published Insights
 **Role:** VP of SEO Strategy & Research, Amsive
-**LinkedIn:** https://www.linkedin.com/in/lily-ray-44755114/
+**LinkedIn:** https://www.linkedin.com/in/lily-ray-44755615/
 **Substack:** https://lilyraynyc.substack.com/
 
 ---
