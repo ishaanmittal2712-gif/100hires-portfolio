@@ -119,6 +119,13 @@ content production, not just commenting on it.
 /research/youtube-transcripts/ — 3 video transcripts with chapter breakdowns
 
 /research/other/               — Additional reference materials
+
+### Programmatic Data Collection
+
+Used Claude Code alongside the `youtube-transcript` npm package to fetch a raw YouTube transcript programmatically — no manual copy-paste. The Ryan Law transcript (1,457 lines) was saved to `research/youtube-transcripts/ryan-law-transcript-raw.txt` directly from the terminal.
+
+`sources.md` was also updated with a **Date Collected** column, making the research log auditable and timestamped.
+
 ### What I Learned
 
 The most important insight from this research: the practitioners 
