@@ -1,10 +1,11 @@
-# Ryan Law — LinkedIn Posts
+# Ryan Law — LinkedIn Posts & Published Insights
 **Role:** Director of Content Marketing, Ahrefs
 **LinkedIn:** https://www.linkedin.com/in/thinkingslow/
 
 ---
 
 ## Post 1 — AI Search Research (Feb 2026)
+**Source:** https://www.linkedin.com/in/thinkingslow/
 
 In the last 3 months at Ahrefs, we analyzed over 1 billion data points 
 across 11 studies. Here's what we learned about AI search optimization:
@@ -33,6 +34,7 @@ SEO wisdom and has significant implications for B2B SaaS content strategy.
 ---
 
 ## Post 2 — AI Content Helper Launch
+**Source:** https://www.linkedin.com/in/thinkingslow/
 
 Very excited about this: Ahrefs AI Content Helper is now live (in early beta).
 
